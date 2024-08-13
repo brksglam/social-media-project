@@ -1,0 +1,9 @@
+<section>
+  <h2>Sosyal Medya Linkleri</h2>
+  <app-link-form></app-link-form>
+  <ul>
+    <li *ngFor="let link of links">
+      <strong>{{ link.name | capitalize }}:</strong> {{ link.url }}
+    </li>
+  </ul>
+</section>
